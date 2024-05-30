@@ -1,4 +1,6 @@
-﻿namespace Ingredients
+﻿using Ingredients;
+
+namespace CookiesCookingBook.Ingredients.@base
 {
     public static class CreateIngredients
     {
@@ -12,7 +14,7 @@
             new Cinnamon();
             new Butter();
             new Chocolate();
-            
+
         }
     }
 }

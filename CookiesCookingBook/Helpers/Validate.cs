@@ -1,5 +1,4 @@
-﻿using Ingredients;
-namespace CookiesCookingBook.Helpers
+﻿namespace CookiesCookingBook.Helpers
 {
     public class Validate
     {

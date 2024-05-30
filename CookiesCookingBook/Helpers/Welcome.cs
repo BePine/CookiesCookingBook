@@ -1,6 +1,6 @@
 ﻿namespace Helpers
 {
-    public class Welcoming
+    public class Welcome
     {
         public static void Show()
         {
