@@ -1,4 +1,4 @@
-﻿namespace CookiesCookingBook.Helpers
+﻿namespace Helpers
 {
     public class Parsing
     {

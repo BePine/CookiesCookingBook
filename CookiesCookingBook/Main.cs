@@ -1,6 +1,6 @@
 ﻿using Cookies;
 using Helpers;
-using CookiesCookingBook.Ingredients.@base;
+using Ingredients.@base;
 Welcome.Show();
 CreateIngredients.Create();
 DisplayIngredients.Show();

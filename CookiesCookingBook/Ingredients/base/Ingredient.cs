@@ -1,4 +1,4 @@
-﻿namespace CookiesCookingBook.Ingredients.@base
+﻿namespace Ingredients.@base
 {
     public abstract class Ingredient
     {

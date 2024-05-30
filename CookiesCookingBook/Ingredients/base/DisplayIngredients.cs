@@ -1,6 +1,6 @@
-﻿using CookiesCookingBook.Ingredients.@base;
+﻿using Ingredients.@base;
 
-namespace CookiesCookingBook.Ingredients.@base
+namespace Ingredients.@base
 {
     public static class DisplayIngredients
     {

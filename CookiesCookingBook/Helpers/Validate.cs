@@ -1,4 +1,5 @@
-﻿namespace CookiesCookingBook.Helpers
+﻿using Ingredients.@base;
+namespace Helpers
 {
     public class Validate
     {

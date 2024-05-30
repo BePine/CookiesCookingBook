@@ -1,4 +1,5 @@
-﻿namespace Ingredients
+﻿using Ingredients.@base;
+namespace Ingredients
 {
     public class Milk : Ingredient
     {

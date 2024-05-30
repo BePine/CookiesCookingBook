@@ -1,6 +1,6 @@
 ﻿using Ingredients;
 
-namespace CookiesCookingBook.Ingredients.@base
+namespace Ingredients.@base
 {
     public static class CreateIngredients
     {
