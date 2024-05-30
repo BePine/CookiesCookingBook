@@ -1,119 +1,122 @@
-﻿namespace Ingredients.Ingredient
+﻿namespace Ingredients
 {
 
-    
+
     public abstract class Ingredient
     {
-        public virtual int id { get; } = 0;
-        public virtual string name { get; } = "ingredient";
-        public virtual string instructions { get; } = "instructions";
+        public virtual int Id { get; } = 0;
+        public virtual string Name { get; } = "ingredient";
+        public virtual string Instructions { get; } = "instructions";
+
         public static List<Ingredient> ingredients = new List<Ingredient>();
+
+
         public virtual void Show()
         {
-            Console.WriteLine($"{id}. {name}. {instructions}");
+            Console.WriteLine($"{Id}. {Name}. {Instructions}");
         }
-        public static void CreateIngredients()
-        {
-            new WhiteSugar();
-            new BrownSugar();
-            new CocoaPowder();
-            new Flour();
-            new Milk();
-            new Cinnamon();
-            new Butter();
-            new Chocolate();
-        }
+
         public void AddThisIngredientToTheList()
-        { 
-            ingredients.Add( this );
+        {
+            ingredients.Add(this);
         }
-       
-        
+
+
     }
 
     public class WhiteSugar : Ingredient
     {
         public WhiteSugar()
         {
-            this.AddThisIngredientToTheList();
+            AddThisIngredientToTheList();
         }
-        public override int id { get; } = 1;
-        public override string name { get; } = "White Sugar";
-        public override string instructions { get; } = "Add 2 spoons to the other ingredients.";
+
+        public override int Id { get; } = 1;
+        public override string Name { get; } = "White Sugar";
+        public override string Instructions { get; } = "Add 2 spoons to the other ingredients.";
+
     }
+
     public class BrownSugar : Ingredient
     {
         public BrownSugar()
         {
-            this.AddThisIngredientToTheList();
+            AddThisIngredientToTheList();
         }
-        public override int id { get; } = 2;
-        public override string name { get; } = "Brown Sugar";
-        public override string instructions { get; } = "Add 1.5 spoons to the other ingredients.";
+
+        public override int Id { get; } = 2;
+        public override string Name { get; } = "Brown Sugar";
+        public override string Instructions { get; } = "Add 1.5 spoons to the other ingredients.";
+
     }
+
     public class CocoaPowder : Ingredient
     {
         public CocoaPowder()
         {
-            this.AddThisIngredientToTheList();
+            AddThisIngredientToTheList();
         }
-        public override int id { get; } = 3;
-        public override string name { get;  } = "Cocoa Powder";
-        public override string instructions { get;  } = "Add 2.5 spoon to the other ingredients.";
+        public override int Id { get; } = 3;
+        public override string Name { get; } = "Cocoa Powder";
+        public override string Instructions { get; } = "Add 2.5 spoon to the other ingredients.";
     }
+
     public class Flour : Ingredient
     {
         public Flour()
         {
-            this.AddThisIngredientToTheList();
+            AddThisIngredientToTheList();
         }
-        public override int id { get; } = 4;
-        public override string name { get; } = "Flour";
-        public override string instructions { get; } = "Add 3 spoons to the other ingredients.";
+        public override int Id { get; } = 4;
+        public override string Name { get; } = "Flour";
+        public override string Instructions { get; } = "Add 3 spoons to the other ingredients.";
     }
+
     public class Milk : Ingredient
     {
         public Milk()
         {
-            this.AddThisIngredientToTheList();
+            AddThisIngredientToTheList();
         }
-        public override int id { get; } = 5;
-        public override string name { get; } = "Milk";
-        public override string instructions { get; } = "Add half a glass.";
+        public override int Id { get; } = 5;
+        public override string Name { get; } = "Milk";
+        public override string Instructions { get; } = "Add half a glass.";
     }
+
     public class Cinnamon : Ingredient
     {
         public Cinnamon()
         {
-            this.AddThisIngredientToTheList();
+            AddThisIngredientToTheList();
 
         }
-        public override int id { get; } = 6;
-        public override string name { get; } = "Cinnamon";
-        public override string instructions { get; } = "Add half of spoon to the other ingredients.";
+        public override int Id { get; } = 6;
+        public override string Name { get; } = "Cinnamon";
+        public override string Instructions { get; } = "Add half of spoon to the other ingredients.";
     }
+
     public class Butter : Ingredient
     {
         public Butter()
         {
-            this.AddThisIngredientToTheList();
+            AddThisIngredientToTheList();
 
         }
-        public override int id { get; } = 7;
-        public override string name { get; } = "Butter";
-        public override string instructions { get; } = "Add half of spoon to the other ingredients.";
+        public override int Id { get; } = 7;
+        public override string Name { get; } = "Butter";
+        public override string Instructions { get; } = "Add half of spoon to the other ingredients.";
     }
-    
+
     public class Chocolate : Ingredient
     {
         public Chocolate()
         {
-            this.AddThisIngredientToTheList();
+            AddThisIngredientToTheList();
 
         }
-        public override int id { get; } = 8;
-        public override string name { get; } = "Chocolate";
-        public override string instructions { get; } = "Add around 6 pieces of chocolate to the rest of the ingredients.";
+        public override int Id { get; } = 8;
+        public override string Name { get; } = "Chocolate";
+        public override string Instructions { get; } = "Add around 6 pieces of chocolate to the rest of the ingredients.";
     }
 }
 
