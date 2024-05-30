@@ -1,0 +1,22 @@
+[
+  [
+    {
+      "$type": "Ingredients.Milk, CookiesCookingBook",
+      "Id": 5,
+      "Name": "Milk",
+      "Instructions": "Add half a glass."
+    },
+    {
+      "$type": "Ingredients.Flour, CookiesCookingBook",
+      "Id": 4,
+      "Name": "Flour",
+      "Instructions": "Add 3 spoons to the other ingredients."
+    },
+    {
+      "$type": "Ingredients.CocoaPowder, CookiesCookingBook",
+      "Id": 3,
+      "Name": "Cocoa Powder",
+      "Instructions": "Add 2.5 spoon to the other ingredients."
+    }
+  ]
+]

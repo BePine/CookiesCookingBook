@@ -29,6 +29,7 @@ namespace Cookies
                         Console.WriteLine("Please type in a number");
                         break;
                     case "emptyString":
+                        SaveLoadCookie.Save(createdCookie);
                         creationStatus = false;
                         break;
                 }

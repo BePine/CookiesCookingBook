@@ -25,13 +25,13 @@ namespace Helpers
             return "emptyString";
 
         }
-        public string ValidateListCount(List<Ingredient> givenList)
+        public bool ValidateListIsEmpty(List<Ingredient> givenList)
         {
             if(givenList.Count != 0)
             {
-                return "notEmpty";
+                return false;
             }
-            return "empty";
+            return true;
         }
 
     }
