@@ -1,55 +1,42 @@
-﻿using Ingredients;
+﻿using CookiesCookingBook.Helpers;
+using Ingredients;
 using System.Numerics;
 namespace Cookies
 {
     public class Cookie
     {
-
-        public void ValidateInput()
+        public List<Ingredient> CreateCookie()
         {
-            var input = Console.ReadLine();
-
-
-            if (input != "")
+            List<Ingredient> createdCookie = new List<Ingredient>();
+            bool creationStatus = true;
+            while (creationStatus)
             {
-                var parsingChoice = new Parsing(input);
-                if (parsingChoice.IsNumber)
+                Console.WriteLine("Add an ingredient by its ID or type anything else if finished.");
+                
+                Validate validation = new Validate();
+                string selectedNumber = Console.ReadLine();
+                string validationResult = validation.ValidateUserInput(selectedNumber);
+                switch (validationResult)
                 {
-                    if(parsingChoice.Number >= Ingredient.ingredients.Count && parsingChoice.Number > 0)
-                    {
-
-                    }
+                    case "ok":
+                        int idAsNumber = int.Parse(selectedNumber) - 1;
+                        createdCookie.Add(Ingredient.ingredients[idAsNumber]);
+                        break;
+                    case "wrongNumber":
+                        Console.WriteLine("type in a number that's assigned to one of the ingredients");
+                        break;
+                    case "notANumber":
+                        Console.WriteLine("Please type in a number");
+                        break;
+                    case "emptyString":
+                        creationStatus = false;
+                        break;
                 }
-
-                else
-                {
-                    Console.WriteLine("Please type in a number");
-                }
+               
             }
-
-            else
-            {
-                Console.WriteLine("its empty;");
-            }
-            
-            Console.ReadLine();
+            return createdCookie;
         }
-    }
-    public class Parsing
-    {
-        public bool IsNumber { get; private set; }
-        public int Number { get; private set; } = 0;
-        public Parsing(string inputNumber)
-        {
-            
-            IsNumber = ParseChoice(inputNumber);
-            if (IsNumber) 
-            {
-                Number = int.Parse(inputNumber); 
-            }
-        }
-        public bool ParseChoice(string input) => int.TryParse(input, out int number);
-
+        
     }
 }
 

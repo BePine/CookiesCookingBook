@@ -6,5 +6,5 @@ CreateIngredients.Create();
 DisplayIngredients.Show();
 
 Cookie newCookie = new Cookie();
-newCookie.ValidateInput();
+newCookie.CreateCookie();
 
