@@ -38,7 +38,6 @@ namespace Cookies
 
             if (File.Exists(path))
             {
-                
                 cookies = Newtonsoft.Json.JsonConvert.DeserializeObject<List<List<Ingredient>>>(File.ReadAllText(path), new Newtonsoft.Json.JsonSerializerSettings
                 {
                     TypeNameHandling = Newtonsoft.Json.TypeNameHandling.Auto,

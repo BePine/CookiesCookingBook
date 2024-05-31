@@ -5,7 +5,7 @@ namespace Ingredients
     {
         public WhiteSugar()
         {
-            AddThisIngredientToTheList();
+
         }
 
         public override int Id { get; } = 1;

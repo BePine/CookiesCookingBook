@@ -8,6 +8,7 @@ namespace Cookies
         public List<Ingredient> CreateCookie()
         {
             List<Ingredient> createdCookie = new List<Ingredient>();
+            DisplayCurrentCookie displayCurrentCookie = new DisplayCurrentCookie(); 
             bool creationStatus = true;
             while (creationStatus)
             {
@@ -29,6 +30,8 @@ namespace Cookies
                         Console.WriteLine("Please type in a number");
                         break;
                     case "emptyString":
+                        displayCurrentCookie.Show(createdCookie);
+                        Console.ReadLine();
                         SaveLoadCookie.Save(createdCookie);
                         creationStatus = false;
                         break;

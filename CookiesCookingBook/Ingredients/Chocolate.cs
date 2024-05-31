@@ -5,8 +5,6 @@ namespace Ingredients
     {
         public Chocolate()
         {
-            AddThisIngredientToTheList();
-
         }
         public override int Id { get; } = 8;
         public override string Name { get; } = "Chocolate";

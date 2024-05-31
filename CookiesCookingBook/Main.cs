@@ -1,13 +1,15 @@
 ﻿using Cookies;
 using Helpers;
 using Ingredients.@base;
-SaveLoadCookie.Load();
 
-DisplayCookies displayCookies = new DisplayCookies();
-displayCookies.Show();
+
+SaveLoadCookie.Load();
+DisplayCookies.Show();
+
+CreateIngredients createIngredients = new CreateIngredients();
+createIngredients.AddToList();
 
 Welcome.Show();
-CreateIngredients.Create();
 DisplayIngredients.Show();
 
 Cookie newCookie = new Cookie();

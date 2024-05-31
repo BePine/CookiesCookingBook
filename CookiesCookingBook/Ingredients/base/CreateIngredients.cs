@@ -2,19 +2,26 @@
 
 namespace Ingredients.@base
 {
-    public static class CreateIngredients
+    public class CreateIngredients
     {
-        public static void Create()
-        {
-            new WhiteSugar();
-            new BrownSugar();
-            new CocoaPowder();
-            new Flour();
-            new Milk();
-            new Cinnamon();
-            new Butter();
-            new Chocolate();
+        List<Ingredient> newIngredientsList = new List<Ingredient> { 
+            new WhiteSugar(),
+            new BrownSugar(),
+            new CocoaPowder(),
+            new Flour(),
+            new Milk(),
+            new Cinnamon(),
+            new Butter(),
+            new Chocolate()
+        };
 
+        public void AddToList()
+        {
+            for (int i = 0; i < newIngredientsList.Count; i++)
+            {
+                newIngredientsList[i].AddThisIngredientToTheList();
+            }
+            
         }
     }
 }

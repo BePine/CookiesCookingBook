@@ -5,12 +5,11 @@ namespace Ingredients
     {
         public Cinnamon()
         {
-            AddThisIngredientToTheList();
 
         }
         public override int Id { get; } = 6;
         public override string Name { get; } = "Cinnamon";
-        public override string Instructions { get; } = "Add half of spoon to the other ingredients.";
+        public override string Instructions { get; } = "Take half a teaspoon. Add to other ingredients.";
     }
 }
 
