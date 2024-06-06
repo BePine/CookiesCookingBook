@@ -1,4 +1,3 @@
-﻿
 using CookiesCookingBook.Recipes;
 using CookiesCookingBook.Recipes.Ingredients;
 var CookingBookApp = new CookingBookApp(
