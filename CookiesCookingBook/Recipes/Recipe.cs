@@ -15,6 +15,15 @@ namespace CookiesCookingBook.Recipes
         {
             Ingredients = ingredients;
         }
+        public override string ToString()
+        {
+            var tempList = new List<string>();
+            foreach(var ingredient in Ingredients) 
+            {
+                tempList.Add($"{ingredient.Name}. {ingredient.Instructions}");
+            }
+            return string.Join(Environment.NewLine, tempList);
+        }
     }
 
 }
