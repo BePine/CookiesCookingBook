@@ -1,10 +1,8 @@
-﻿namespace CookiesCookingBook.Recipes.Ingredients
+﻿namespace CookiesCookingBook.Recipes.Ingredients;
+
+public class Chocolate : Meltable
 {
-    public class Chocolate : Meltable
-    {
 
-        public override int Id => 8;
-        public override string Name => "Chocolate";
-    }
-
+    public override int Id => 8;
+    public override string Name => "Chocolate";
 }

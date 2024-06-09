@@ -5,25 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 using CookiesCookingBook.Recipes.Ingredients;
 
-namespace CookiesCookingBook.Recipes
+namespace CookiesCookingBook.Recipes;
+
+public class Recipe
 {
-    public class Recipe
+    public IEnumerable<Ingredient> Ingredients { get; }
+
+    public Recipe(IEnumerable<Ingredient> ingredients)
     {
-        IEnumerable<Ingredient> Ingredients { get; }
-
-        public Recipe(IEnumerable<Ingredient> ingredients)
-        {
-            Ingredients = ingredients;
-        }
-        public override string ToString()
-        {
-            var tempList = new List<string>();
-            foreach(var ingredient in Ingredients) 
-            {
-                tempList.Add($"{ingredient.Name}. {ingredient.Instructions}");
-            }
-            return string.Join(Environment.NewLine, tempList);
-        }
+        Ingredients = ingredients;
     }
-
+    public override string ToString()
+    {
+        var tempList = new List<string>();
+        foreach(var ingredient in Ingredients) 
+        {
+            tempList.Add($"{ingredient.Name}. {ingredient.Instructions}");
+        }
+        return string.Join(Environment.NewLine, tempList);
+    }
 }

@@ -1,11 +1,9 @@
-﻿namespace CookiesCookingBook.Recipes.Ingredients
+﻿namespace CookiesCookingBook.Recipes.Ingredients;
+
+public class BrownSugar : Ingredient
 {
-    public class BrownSugar : Ingredient
-    {
 
-        public override int Id => 2;
-        public override string Name => "Brown Sugar";
-
-    }
+    public override int Id => 2;
+    public override string Name => "Brown Sugar";
 
 }
